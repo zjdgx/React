@@ -16,3 +16,21 @@
 		```
 		
 		然后可以在组件的任何地方使用this.refs.myInput获取引用.
+
+#第3章 组件的生命周期(P23)
+	
+	- 实例化：
+		- getDefaultProps
+		- getInitialState
+			每次创建实例时调用一次
+		- componentWillMount
+		- render
+		- componentDidMount
+	- 存在期：
+		- componentWillReceiveProps
+		- shouldComponentUpdate
+		- componentWillUpdate
+		- render
+		- componentDidUpdate
+	- 销毁&清理期
+		- componentWillUnmount
