@@ -22,9 +22,16 @@
 - 实例化：
 	- getDefaultProps
 	- getInitialState
+	
 		每次创建实例时调用一次
 	- componentWillMount
+		
+		在render方法调用之前最后一个可以修改state的方法
 	- render
+		- 只能通过this.props和this.state访问数据
+		- 可以返回null、false或者任何React组件
+		- 只能出现一个顶级组件(不能返回一组元素)
+		- 不能改变组件的状态或者修改DOM的输出
 	- componentDidMount
 - 存在期：
 	- componentWillReceiveProps
